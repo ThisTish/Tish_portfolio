@@ -29,7 +29,9 @@
 	flex-wrap: wrap;
 	width: 100%;
 	grid-column: 3/4;
-	grid-row: 2/3;
+	grid-row: auto;
+	align-content: center;
+	gap: .5rem;
   }
   
   .works {
@@ -66,13 +68,14 @@ h1{
 	width: 4rem;
 	height: auto;
 	position: absolute;
-	left: 20%;
-	top: 10%;
+	left: 20rem;
+	top: 1rem;
 }
 /* open eyes */
 .header p{
-	font-size: 2rem;
-	text-align: center;
+	font-size: 1.2rem;
+	display: absolute;
+	top: 4rem;	
 }
 
 nav{
@@ -80,6 +83,7 @@ nav{
 	right: 10%;
 	bottom: 5%;
 	font-size: 1.5rem;
+	z-index: -1;
 }
 
 a{
@@ -94,10 +98,20 @@ h2{
 }
 
 .pets img {
-	max-width:5em;
+	max-width:4rem;
 	height: auto;
-	flex: 1 2em 50%;
+	flex: 1;
 }
+
+/* .pets img:first-child{
+	flex: 2 0 50%;
+} */
+
+.pets img:nth-child(2) {
+	align-self: center;
+}
+
+
 
 
 h3{
@@ -111,6 +125,16 @@ article img:first-child{
 	width: 100%;
 	height: auto;
 }
+
+article:first-child{
+	grid-row: span 2/auto;
+}
+
+article {
+	grid-row: 1;
+}
+
+
 
 article {
 	flex: 0 .5rem 50%;
