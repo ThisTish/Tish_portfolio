@@ -1,32 +1,93 @@
 
 .wrapper {
+	/* background-image:url(/assets/images/background3.jpg);
+	background-size: 100%;
+	background-position: top;
+	background-repeat: no-repeat; */
+	/* notworking */
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
+	gap: 8rem;
 	grid-auto-rows: minmax(100px, auto);
   }
-  .one {
-	grid-column: 1 / 3;
+  .header {
+	grid-column: 1 / 4;
 	grid-row: 1;
+	position: relative;
   }
-  .two {
-	grid-column: 2 / 4;
-	grid-row: 1 / 3;
+  /* .nav {
+	grid-column: 3 / 4;
+	grid-row: 1
+  } */
+  .aboutme {
+	grid-column: 1/3;
+	grid-row: 2;
   }
-  .three {
-	grid-column: 1;
-	grid-row: 2 / 5;
+  .pets {
+	display: flex;
+	width: 25%;
+	grid-column: 3/4;
+	grid-row: 2;
   }
-  .four {
-	grid-column: 3;
+.pets img {
+	max-width:100%;
+	height: auto;
+}
+
+  .works {
+	grid-column: 1/3;
+	grid-row: 3/4;
+  }
+  .contact {
+	grid-column: 3/4;
 	grid-row: 3;
   }
-  .five {
-	grid-column: 2;
+
+  .footer {
+	grid-column: 1 /3;
 	grid-row: 4;
-  }
-  .six {
-	grid-column: 3;
-	grid-row: 4;
-  }
-  
+}
+
+
+/* secondary classes in order of appearence */
+
+/* name */
+ h1{
+	font-size: 4rem;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* pic of me */
+.header img {
+	width: 2rem;
+	height: auto;
+	position: absolute;
+	left: 20%;
+	top: 10%;
+}
+/* open eyes */
+.header p{
+	font-size: 2rem;
+	text-align: center;
+}
+
+nav{
+	position: absolute;
+	right: 10%;
+	bottom: 5%;
+	font-size: 1.5rem;
+}
+
+a{
+	text-shadow: 2px 2px 5px #00829d;
+	transition: transform .3s ease;
+	color: darkkhaki;
+}
+
+h2{
+	font-size: 3rem;
+}
+
+
+
+/* headers font*/
+font-family: Verdana,Geneva,sans-serif;
