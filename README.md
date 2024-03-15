@@ -2,7 +2,7 @@
 
 ##My first portfolio, never perfect, but always awesome.
 
-###wish i could do more with it, but ran outta time!
+###lots of time, little to do.--scratch that, reverse it.
 
 ![alt text](<assets/images/Screenshot 2024-03-14 233018.png>)
 ![alt text](<assets/images/Screenshot 2024-03-14 233044.png>)

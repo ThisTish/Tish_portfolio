@@ -62,11 +62,6 @@ body {
 /* secondary classes in order of appearence */
 
 /* name */
-h1{
-	font-size: 4rem;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	color: #2e5e48;
-}
 /* pic of me */
 .header img {
 	width: 4rem;
@@ -110,15 +105,11 @@ h2{
 @media screen and (min-width:600px){
 	
 	.pets img {
-	max-width:4rem;
-	height: auto;
-	flex: 1;
+		max-width:4rem;
+		height: auto;
+		flex: 1;
 	}
 }
-
-/* .pets img:first-child{
-	flex: 2 0 50%;
-} */
 
 .pets img:nth-child(2) {
 	align-self: center;
@@ -154,4 +145,10 @@ article {
 /* headers font*/
 h2, h3, h4, h5, h6 {
 	font-family: Verdana,Geneva,sans-serif;
+}
+
+h1{
+	font-size: 4rem;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #2e5e48;
 }
