@@ -6,35 +6,37 @@ body {
 	background-size: cover;
 }
 
-
+@media screen and (min-width:600px){
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
 	grid-auto-rows: auto;
   }
+}
   .header {
 	grid-column: 1 / 4;
 	grid-row: 1;
 	position: relative;
   }
-
+@media screen and (min-width: 600px){
   .aboutme {
 	grid-column: 1/3;
 	grid-row: 2;
   }
+}
   .pets {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 100%;
+	width: 50%;
 	grid-column: 3/4;
 	grid-row: auto;
 	align-content: center;
 	gap: .5rem;
   }
-  
-  .works {
+  @media screen and (min-width:600px){ 
+	  .works {
 	grid-column: 1/3;
 	grid-row: 3;
 	display:flex;
@@ -44,6 +46,7 @@ body {
 	gap: 1rem;
 	justify-content: center;
 }
+  }
 .contact {
 	grid-column: 3;
 	grid-row: 4;
@@ -62,6 +65,7 @@ body {
 h1{
 	font-size: 4rem;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #2e5e48;
 }
 /* pic of me */
 .header img {
@@ -79,7 +83,6 @@ h1{
 }
 
 
-
 nav{
 	position: absolute;
 	right: 10%;
@@ -87,28 +90,30 @@ nav{
 	font-size: 1.5rem;
 }
 
-nav a{
-	text-shadow: 2px 2px 5px #00829d;
-	transition: transform .3s ease;
-	color: darkkhaki;
-
-}
-
 a{
 	text-shadow: 2px 2px 5px #00829d;
 	transition: transform .3s ease;
-	color: darkkhaki;
+	color: #3f5512;
+}
+
+a:hover{
+	font-size: 1.3rem;
 }
 
 h2{
 	font-size: 3rem;
 	display: block;
+	color: #b84d01;
+	
 }
 
-.pets img {
+@media screen and (min-width:600px){
+	
+	.pets img {
 	max-width:4rem;
 	height: auto;
 	flex: 1;
+	}
 }
 
 /* .pets img:first-child{
@@ -124,10 +129,11 @@ h2{
 
 h3{
 	font-size: 2rem;
+	color: #ba8114;
 }
 
 article:first-child{
-	flex:3 0 100%;
+	flex:1 0 100%;
 }
 article img:first-child{
 	width: 100%;
@@ -138,14 +144,11 @@ article:first-child{
 	grid-row: span 2/auto;
 }
 
-article {
-	grid-row: 1;
-}
-
 
 
 article {
 	flex: 0 .5rem 50%;
+	grid-row: 1;
 }
 
 /* headers font*/
