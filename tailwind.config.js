@@ -10,7 +10,11 @@ module.exports = {
       'green': '#4A611D',
       'yellow': '#9E650A'
     },
-    extend: {},
+    extend: {
+      fontFamily:{
+        fjalla: ['fjalla one', 'sans serif']
+      }
+    },
   },
   plugins: [],
 }
