@@ -4,7 +4,7 @@
   "description": "https://thistish.github.io/Tish_portfolio/",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css":"tailwind -i ./assets/css/style.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
