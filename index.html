@@ -7,23 +7,26 @@
 	<meta name="keywords" content="Web Development, Applications, Page Design, Portfolio, Coding, Hire Me">
     <title>Tish Sirface Web Development</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="assets/css/style.css">
     
 </head>
 <body class="wrapper">
 
 
-    <header class="header">
-        <h1>Tish Sirface</h1>
-		<img src="assets/images/meSixBVC.JPG">
-		<p>Open your eyes, it's Now</p>
-		<nav class="nav">
-				<ul>
-					<li><a href="#aboutme">About</a></li>
-					<li><a href="#myworks">Works</a></li>
-					<li><a href="#contactme">Contact</a></li>
-				</ul>
-		</nav>
+    <header>
+		<div class="flex flex-wrap">
+			<img class="rounded-md mx-auto opacity-75" src="./assets/images/TishSirface.png">
+			<img class="mx-auto h-24 rounded-md" src="assets/images/meSixBVC.JPG">
+			<p class="mx-auto text-2xl text-third">Open your eyes, it's Now</p>
+		</div>
+		<div class=" text-center">
+			<ul class="flex justify-center">
+				<li class="flex-1 rounded-md m-1 bg-yellow hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="#aboutme">About</a></li>
+				<li class="flex-1 rounded-md m-1 bg-green hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="#myworks">Works</a></li>
+				<li class="flex-1 rounded-md m-1 bg-secondary hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="#contactme">Contact</a></li>
+			</ul>
+		</div>
 	</header>
 		
     <section class="aboutme" id="aboutme">
@@ -31,10 +34,10 @@
 		<p id="about">Hi! My name is Tish. I have lived in Utah most of my life, but have ventured to live in Idaho and Alaska for some short periods of time. I have some experience in SEO. Working for a company that provided the service to small local companies. I work at the Remote Encoding Center for the USPS as a data conversion clerk. 	We decipher and code addresses and names that the computers are not able to read (like cursive). I love to create. I have crocheted for 20+ years, and I am ready to start creating digitally. When I'm not creating, I like to disc golf, spend time with my dogs, and travel. Feel free to check out my works, and be sure to check back often for all my new projects. I plan on there being many!</p>
 	</section>
 	
-	<ul class="pets">
-				<img id="pets" src="assets/images/Fibonacci.jpg">
-				<img id="pets" src="assets/images/Steven.jpg">
-				<img id="pets" src="assets/images/Max.jpg">
+	<ul class="flex justify-around">
+				<img class="m-auto h-32 rounded-md" id="pets" src="assets/images/Fibonacci.jpg">
+				<img class="m-auto h-32 rounded-md" id="pets" src="assets/images/Steven.jpg">
+				<img class="m-auto h-32 rounded-md" id="pets" src="assets/images/Max.jpg">
 	</ul>
 	
     <section class="works" id="myworks">
