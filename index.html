@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-	<script defer src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -42,55 +42,67 @@
 				<img class="m-auto h-32 rounded-md" id="pets" src="assets/images/Steven.jpg">
 				<img class="m-auto h-32 rounded-md" id="pets" src="assets/images/Max.jpg">
 	</ul>
-<section>
-	<div id="default-carousel" class="relative w-full" data-carousel="slide">
-		<!-- Carousel wrapper -->
-		<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-			<!-- Item 1 -->
-			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="/assets/images/IoO.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-			</div>
-			<!-- Item 2 -->
-			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="/assets/images/Blogology.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-			</div>
-			<!-- Item 3 -->
-			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="/assets/images/CheckingTheWeather.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-			</div>
-			<!-- Item 4 -->
-			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-			</div>
-			<!-- Item 5 -->
-			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-			</div>
-		</div>
-
 
 	
-	<!-- my works carosel -->
-    <!-- <section class="relative w-full" id="default-carousel" data-carousel="static">
-		<article class="rounded-md m-3 relative overflow-hidden max-w-sm">
-			<div class=" ease-in-out" data-carousel-item="active">
-				<div>	
-					<img src="assets/images/IoO.png">
-					<a href="https://in-or-out-6n4t.onrender.com" class="absolute top-3 left-3 bg-yellow text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">In or Out</a>
-				</div>
-				<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Create and join activities with friends</p>
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide rounded-md m-3 relative overflow-hidden max-w-sm">
+				<div class="ease-in-out">
+					<div>	
+						<img src="assets/images/IoO.png">
+						<a href="https://in-or-out-6n4t.onrender.com" class="absolute top-3 left-3 bg-yellow text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">In or Out</a>
+					</div>
+					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Create and join activities with friends</p>
+				</div>			
 			</div>
-		</article>
 			
-		<article class="rounded-md m-3 relative overflow-hidden max-w-sm">
-			<div class="hidden ease-in-out" data-carousel-item>
-				<div>
-					<img src="assets/images/Blogology.png">
-					<a href="https://thistish.github.io/Blogology" class="absolute top-1 left-2 bg-secondary text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">Blogology</a>
-				</div>
-				<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A place for your thoughts just for you</p>
+			<div class="swiper-slide rounded-md m-3 relative overflow-hidden max-w-sm">
+				<div class="ease-in-out">
+					<div>
+						<img src="assets/images/Blogology.png">
+						<a href="https://thistish.github.io/Blogology" class="absolute top-1 left-2 bg-secondary text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">Blogology</a>
+					</div>
+					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A place for your thoughts just for you</p>
+				</div>			
 			</div>
-		</article>
+			<div class="swiper-slide rounded-md m-3 relative overflow-hidden max-w-sm">
+				<div class="ease-in-out">
+					<div>
+						<img src="assets/images/CheckingTheWeather.png">
+						<a href="https://thistish.github.io/Checking_the_Weather" class="absolute top-3 left-2 bg-third text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">Check The Weather</a>
+					</div>
+					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Find the what the weather is like in your most important places</p>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-scrollbar"></div>
+		<div class="swiper-pagination"></div>
+		</div>
+
+	<!-- my works carosel -->
+    <!-- //<section class="relative w-full" id="default-carousel" data-carousel="static"> -->
+		<!-- //<article class="rounded-md m-3 relative overflow-hidden max-w-sm">
+		//	<div class=" ease-in-out" data-carousel-item="active">
+		//		<div>	
+		//			<img src="assets/images/IoO.png">
+		//			<a href="https://in-or-out-6n4t.onrender.com" class="absolute top-3 left-3 bg-yellow text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">In or Out</a>
+		//		</div>
+		//		<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Create and join activities with friends</p>
+		//	</div>
+		//</article>
+			
+	//	<article class="rounded-md m-3 relative overflow-hidden max-w-sm">
+	//		<div class="hidden ease-in-out" data-carousel-item>
+	//			<div>
+	//				<img src="assets/images/Blogology.png">
+	//				<a href="https://thistish.github.io/Blogology" class="absolute top-1 left-2 bg-secondary text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">Blogology</a>
+	//			</div>
+	//			<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A place for your thoughts just for you</p>
+	//		</div>
+	//	</article>
 			
 		<article class="rounded-md m-3 relative overflow-hidden max-w-sm">
 			<div class="hidden ease-in-out" data-carousel-item>
@@ -100,7 +112,7 @@
 				</div>
 				<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Find the what the weather is like in your most important places</p>
 			</div>
-		</article> -->
+		</article>
 
 		<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary bg-opacity-55 group-hover:bg-primary group-focus:ring-4 group-focus:ring-secondary group-focus:outline-none">
@@ -118,7 +130,7 @@
             <span class="sr-only">Next</span>
         </span>
 		</button>
-    </section>
+    </section> -->
 
 	<section class="contact" id="contactme">
             <h2>Contact Me</h2>
@@ -132,6 +144,37 @@
 	<footer class="footer">
         <p>&copy; 2024 Tish's Portfolio. All rights reserved.</p>
     </footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script>
+	var swiper = new Swiper(".mySwiper", {
+		slidesPerView: 1,
+		centeredSlides: false,
+		slidesPerGroupSkip: 1,
+		grabCursor: true,
+		keyboard: {
+		enabled: true,
+		},
+		breakpoints: {
+		769: {
+			slidesPerView: 2,
+			slidesPerGroup: 2,
+		},
+		},
+		scrollbar: {
+		el: ".swiper-scrollbar",
+		},
+		navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		},
+	});
+	</script>
     
 </body>
 </html>
