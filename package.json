@@ -1,0 +1,16 @@
+{
+  "name": "tish_portfolio",
+  "version": "1.0.0",
+  "description": "https://thistish.github.io/Tish_portfolio/",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flowbite": "^2.3.0",
+    "tailwind": "^4.0.0"
+  }
+}

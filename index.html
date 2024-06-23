@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	<script defer src="./node_modules/flowbite/dist/flowbite.min.js"></script>
     <link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -20,13 +21,13 @@
     <header>
 		<div class="flex flex-wrap">
 			<img class="mb-3 rounded-md opacity-55" src="./assets/images/TishSirface.png">
-			<img class="mx-auto h-24 rounded-md" src="assets/images/meSixBVC.JPG">
+			<img class="mx-auto h-24 rounded-md mb-3" src="assets/images/meSixBVC.JPG">
 			<p class="mx-auto text-2xl text-third bg-primary bg-opacity-50 rounded-md font-fjalla">Open your eyes, it's Now</p>
 		</div>
 		<div class=" text-center">
 			<ul class="flex justify-center">
-				<li class="flex-1 rounded-md m-1 bg-yellow hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="#aboutme">About</a></li>
-				<li class="flex-1 rounded-md m-1 bg-green hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="#myworks">Works</a></li>
+				<li class="flex-1 rounded-md m-1 bg-mustard hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="#aboutme">About</a></li>
+				<li class="flex-1 rounded-md m-1 bg-grass hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="#myworks">Works</a></li>
 				<li class="flex-1 rounded-md m-1 bg-secondary hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="#contactme">Contact</a></li>
 			</ul>
 		</div>
@@ -41,33 +42,82 @@
 				<img class="m-auto h-32 rounded-md" id="pets" src="assets/images/Steven.jpg">
 				<img class="m-auto h-32 rounded-md" id="pets" src="assets/images/Max.jpg">
 	</ul>
+<section>
+	<div id="default-carousel" class="relative w-full" data-carousel="slide">
+		<!-- Carousel wrapper -->
+		<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+			<!-- Item 1 -->
+			<div class="hidden duration-700 ease-in-out" data-carousel-item>
+				<img src="/assets/images/IoO.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			</div>
+			<!-- Item 2 -->
+			<div class="hidden duration-700 ease-in-out" data-carousel-item>
+				<img src="/assets/images/Blogology.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			</div>
+			<!-- Item 3 -->
+			<div class="hidden duration-700 ease-in-out" data-carousel-item>
+				<img src="/assets/images/CheckingTheWeather.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			</div>
+			<!-- Item 4 -->
+			<div class="hidden duration-700 ease-in-out" data-carousel-item>
+				<img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			</div>
+			<!-- Item 5 -->
+			<div class="hidden duration-700 ease-in-out" data-carousel-item>
+				<img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+			</div>
+		</div>
+
+
 	
-    <section class="works" id="myworks">
-		<article>
-				<h2>Featured Work</h2>
-				<h3>In or Out</h3>
-				<a href="https://in-or-out-6n4t.onrender.com/">
-					<img src="assets/images/In-or-Out.png">
-				</a>
-				<p id="about">Create and join activities with friends</p>
-			</article>
+	<!-- my works carosel -->
+    <!-- <section class="relative w-full" id="default-carousel" data-carousel="static">
+		<article class="rounded-md m-3 relative overflow-hidden max-w-sm">
+			<div class=" ease-in-out" data-carousel-item="active">
+				<div>	
+					<img src="assets/images/IoO.png">
+					<a href="https://in-or-out-6n4t.onrender.com" class="absolute top-3 left-3 bg-yellow text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">In or Out</a>
+				</div>
+				<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Create and join activities with friends</p>
+			</div>
+		</article>
 			
-			<article>
-				<h3>Blogology</h3>
-				<!-- todo event listener to change to dark before going to site. -->
-				<a href="https://thistish.github.io/Blogology/">
+		<article class="rounded-md m-3 relative overflow-hidden max-w-sm">
+			<div class="hidden ease-in-out" data-carousel-item>
+				<div>
 					<img src="assets/images/Blogology.png">
-				</a>
-				<p id="about">Simple blog to keep your thoughts locally</p>
-			</article>
+					<a href="https://thistish.github.io/Blogology" class="absolute top-1 left-2 bg-secondary text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">Blogology</a>
+				</div>
+				<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A place for your thoughts just for you</p>
+			</div>
+		</article>
 			
-			<article>
-				<h3>Checking The Weather</h3>
-				<a href="https://thistish.github.io/Checking_the_Weather/">
+		<article class="rounded-md m-3 relative overflow-hidden max-w-sm">
+			<div class="hidden ease-in-out" data-carousel-item>
+				<div>
 					<img src="assets/images/CheckingTheWeather.png">
-				</a>
-				<p id="about">Find the what the weather is like in your most important places</p>
-			</article>
+					<a href="https://thistish.github.io/Checking_the_Weather" class="absolute top-3 left-2 bg-third text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center hover:scale-125 hover:bg-opacity-65">Check The Weather</a>
+				</div>
+				<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Find the what the weather is like in your most important places</p>
+			</div>
+		</article> -->
+
+		<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary bg-opacity-55 group-hover:bg-primary group-focus:ring-4 group-focus:ring-secondary group-focus:outline-none">
+            <svg class="w-4 h-4 text-text  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+		</button>
+		<button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary bg-opacity-55 group-hover:bg-primary group-focus:ring-4 group-focus:ring-secondary group-focus:outline-none">
+            <svg class="w-4 h-4 text-text  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+		</button>
     </section>
 
 	<section class="contact" id="contactme">
