@@ -8,7 +8,8 @@ module.exports = {
       'third': '#801D02',
       'text': '#F4FEFD',
       'grass': '#4A611D',
-      'mustard': '#9E650A'
+      'mustard': '#9E650A',
+      'orange': '#b04b0c'
     },
     extend: {
       fontFamily:{
