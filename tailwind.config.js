@@ -11,6 +11,12 @@ module.exports = {
       'mustard': '#9E650A',
       'orange': '#b04b0c'
     },
+    screens:{
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px'
+    },
     extend: {
       fontFamily:{
         fjalla: ['fjalla one', 'sans serif']
