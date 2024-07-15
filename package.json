@@ -4,12 +4,13 @@
   "description": "https://thistish.github.io/Tish_portfolio/",
   "main": "tailwind.config.js",
   "scripts": {
-    "build:css":"tailwind -i ./assets/css/style.css -o ./dist/output.css --watch"
+    "build:css": "tailwindcss -i ./assets/css/style.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tailwind": "^4.0.0"
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.4.4"
   }
 }

@@ -22,9 +22,6 @@ module.exports = {
         fjalla: ['fjalla one', 'sans serif']
       }
     },
-  },
-  plugins: [
-    require('flowbite/plugin')
-  ],
+  }
 }
 

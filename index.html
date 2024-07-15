@@ -10,6 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -44,146 +46,155 @@
 			
 			When I'm not crafting code or yarn, you'll often find me on the disc golf course or exploring the great outdoors. I thrive in nature, where I find inspiration and peace alike. Feel free to explore my portfolio and get in touch—I'm always up for discussing tech, creativity, or the latest disc golf strategies!</p>
 		<ul class="flex justify-around mb-3 w-full lg:flex-col lg:w-1/5 lg:items-center bg-secondary bg-opacity-75 lg:my-3 lg:ml-3 rounded-md">
-					<li class="flex-1 flex justify-center m-3 max-w-24 relative">
-						<img class="m-3 object-cover w-full h-auto  rounded-md" id="pets" src="assets/images/Fibonacci.jpg">
-						<span class="absolute bottom-0 right-0 bg-third text-xs text-text font-bold rounded-full p-1">Fibonacci</span>
+			<li class="flex-1 flex justify-center m-3 max-w-24 relative">
+				<img class="m-3 object-cover w-full h-auto  rounded-md" id="pets" src="assets/images/Fibonacci.jpg">
+				<span class="absolute bottom-0 right-0 bg-third text-xs text-text font-bold rounded-full p-1">Fibonacci</span>
 
-					</li>
-					<li class="flex-1 flex justify-center m-3 max-w-24 relative">
-						<img class="m-3 object-cover w-full h-auto  rounded-md" id="pets" src="assets/images/Steven.jpg">
-						<span class="absolute bottom-0 right-0 bg-mustard text-xs text-text font-bold rounded-full p-1">Steven</span>
+			</li>
+			<li class="flex-1 flex justify-center m-3 max-w-24 relative">
+				<img class="m-3 object-cover w-full h-auto  rounded-md" id="pets" src="assets/images/Steven.jpg">
+				<span class="absolute bottom-0 right-0 bg-mustard text-xs text-text font-bold rounded-full p-1">Steven</span>
 
-					</li>
-					<li class="flex-1 flex justify-center m-3 max-w-24 relative">
-						<img class="m-3 object-cover w-full h-auto  rounded-md" id="pets" src="assets/images/Max.jpg">
-						<span class="absolute bottom-0 right-0 bg-grass text-xs text-text font-bold rounded-full p-1">Max</span>
+			</li>
+			<li class="flex-1 flex justify-center m-3 max-w-24 relative">
+				<img class="m-3 object-cover w-full h-auto  rounded-md" id="pets" src="assets/images/Max.jpg">
+				<span class="absolute bottom-0 right-0 bg-grass text-xs text-text font-bold rounded-full p-1">Max</span>
 
-					</li>
+			</li>
 		</ul>
 	
 
-	
-	<div class="swiper mySwiper lg:w-3/5 lg:my-3 lg:mx-7 bg-grass bg-opacity-75 rounded-md" id="myworks">
-		<div class="swiper-wrapper flex items-center justify-around">
+	<!-- projects carousel-->
+		<div class="swiper mySwiper lg:w-3/5 lg:my-3 lg:mx-7 bg-grass bg-opacity-75 rounded-md" id="myworks">
+			<div class="swiper-wrapper flex items-center justify-around">
 
-			<div class="swiper-slide flex items-center justify-center rounded-md p-1 relative overflow-hidden max-w-sm ">
-				<div >
-					<div>	
-						<a href="https://in-or-out-6n4t.onrender.com"><img src="assets/images/IoO.png" class="rounded-t-md hover:opacity-55"></a>
-						<!-- <a href="https://in-or-out-6n4t.onrender.com" class="absolute top-3 left-3 bg-mustard text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">In or Out</a> -->
-					</div>
-					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Create and join activities with friends</p>
-				</div>			
-			</div>
+				<div class="swiper-slide flex items-center justify-center rounded-md p-1 relative overflow-hidden max-w-sm ">
+					<div >
+						<div>	
+							<a href="https://in-or-out-6n4t.onrender.com"><img src="assets/images/IoO.png" class="rounded-t-md hover:opacity-55"></a>
+						</div>
+						<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Create and join activities with friends</p>
+					</div>			
+				</div>
 
-			<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
-				<div >
-					<div class="relative">
-						<a href="https://thistish.github.io/Checking_the_Weather" ><img src="assets/images/CheckingTheWeather.png" class="rounded-t-md hover:opacity-55"></a>
-						<!-- <a href="https://thistish.github.io/Checking_the_Weather" class="absolute top-3 left-2 bg-third text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">Check The Weather</a> -->
+				<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
+					<div >
+						<div class="relative">
+							<a href="https://thistish.github.io/Checking_the_Weather" ><img src="assets/images/CheckingTheWeather.png" class="rounded-t-md hover:opacity-55"></a>
+							<!-- <a href="https://thistish.github.io/Checking_the_Weather" class="absolute top-3 left-2 bg-third text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">Check The Weather</a> -->
+						</div>
+						<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Find the what the weather is like in your most important places</p>
 					</div>
-					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Find the what the weather is like in your most important places</p>
+				</div>
+				
+				<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
+					<div >
+						<div class="relative">
+							<a href="https://thistish.github.io/Blogology"><img src="assets/images/Blogology.png" class="rounded-t-md hover:opacity-55"></a>
+						</div>
+						<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A place for your thoughts just for you</p>
+					</div>			
+				</div>
+
+				<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
+					<div >
+						<div class="relative">
+							<a href="https://thistish.github.io/Task-Master"><img src="assets/images/TaskMaster.png" class="rounded-t-md hover:opacity-55"></a>
+						</div>
+						<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A simple Kanban board</p>
+					</div>
+				</div>
+				
+				<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
+					<div >
+						<div class="relative">
+							<a href="https://noteworthy-k2jj.onrender.com/"><img src="assets/images/Noteworthy.png" class="rounded-t-md hover:opacity-55"></a>
+							<!-- <a href="https://noteworthy-k2jj.onrender.com/" class="absolute top-3 left-3 bg-grass text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">Noteworthy</a> -->
+						</div>
+						<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Save anything NoteWorthy</p>
+					</div>
+				</div>
+				
+				<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
+					<div >
+						<div class="relative">
+							<a href="https://thistish.github.io/Movies-n-Munchies/"><img src="assets/images/MoviesNMunchies.png" class="rounded-t-md hover:opacity-55"></a>
+						</div>
+						<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A site to help you plan your nite</p>
+					</div>
+				</div>
+
+				<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
+					<div >
+						<div class="relative">
+							<a href="https://thistish.github.io/Employee_Roster_Randomizer"><img src="assets/images/EmployeeRoster.png" class="rounded-t-md hover:opacity-55"></a>
+						</div>
+						<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Keep track of employees, their salaries, and pick one at random</p>
+					</div>			
+				</div>
+
+				<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
+					<div >
+						<div class="relative">
+							<a href="https://thistish.github.io/Blogology"><img src="assets/images/BlogologyDark.png" class="rounded-t-md hover:opacity-55"></a>
+						</div>
+						<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A dark place for your thoughts just for you</p>
+					</div>			
+				</div>
+				
+				<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
+					<div >
+						<div class="relative">
+							<a href="https://github.com/ThisTish/MakeALogo"><img src="assets/images/MakeYourLogo.png" class="rounded-t-md hover:opacity-55"></a>
+						</div>
+						<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">An SVG logo generator</p>
+					</div>			
 				</div>
 			</div>
-			
-			<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
-				<div >
-					<div class="relative">
-						<a href="https://thistish.github.io/Blogology"><img src="assets/images/Blogology.png" class="rounded-t-md hover:opacity-55"></a>
-						<!-- <a href="https://thistish.github.io/Blogology" class="absolute top-2.5 left-2 bg-secondary text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">Blogology</a> -->
-					</div>
-					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A place for your thoughts just for you</p>
-				</div>			
-			</div>
 
-			<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
-				<div >
-					<div class="relative">
-						<a href="https://thistish.github.io/Task-Master"><img src="assets/images/TaskMaster.png" class="rounded-t-md hover:opacity-55"></a>
-						<!-- <a href="https://thistish.github.io/Task-Master" class="absolute top-3 left-2 bg-grass text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">Task Master</a> -->
-					</div>
-					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A simple Kanban board</p>
-				</div>
-			</div>
-			
-			<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
-				<div >
-					<div class="relative">
-						<a href="https://noteworthy-k2jj.onrender.com/"><img src="assets/images/Noteworthy.png" class="rounded-t-md hover:opacity-55"></a>
-						<!-- <a href="https://noteworthy-k2jj.onrender.com/" class="absolute top-3 left-3 bg-grass text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">Noteworthy</a> -->
-					</div>
-					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Save anything NoteWorthy</p>
-				</div>
-			</div>
-			
-			<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
-				<div >
-					<div class="relative">
-						<a href="https://thistish.github.io/Movies-n-Munchies/"><img src="assets/images/MoviesNMunchies.png" class="rounded-t-md hover:opacity-55"></a>
-						<!-- <a href="https://thistish.github.io/Movies-n-Munchies/" class="absolute top-3 left-2 bg-mustard text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">Movies'n'Munchies</a> -->
-					</div>
-					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A site to help you plan your nite</p>
-				</div>
-			</div>
-
-			<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
-				<div >
-					<div class="relative">
-						<a href="https://thistish.github.io/Employee_Roster_Randomizer"><img src="assets/images/EmployeeRoster.png" class="rounded-t-md hover:opacity-55"></a>
-						<!-- <a href="https://thistish.github.io/Employee_Roster_Randomizer" class="absolute top-3 left-2 bg-third text-text font-semibold text-sm p-1 rounded inline-flex items-center shadow-md shadow-text justify-center hover:scale-125 hover:bg-opacity-65">Employee Roster</a> -->
-					</div>
-					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">Keep track of employees, their salaries, and pick one at random</p>
-				</div>			
-			</div>
-
-			<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
-				<div >
-					<div class="relative">
-						<a href="https://thistish.github.io/Blogology"><img src="assets/images/BlogologyDark.png" class="rounded-t-md hover:opacity-55"></a>
-						<!-- <a href="https://thistish.github.io/Blogology" class="absolute top-3 left-3 bg-secondary text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">Blogology Dark Mode</a> -->
-					</div>
-					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">A dark place for your thoughts just for you</p>
-				</div>			
-			</div>
-			
-			<div class="swiper-slide flex items-center justify-center rounded-md p-1  overflow-hidden max-w-sm">
-				<div >
-					<div class="relative">
-						<a href="https://github.com/ThisTish/MakeALogo"><img src="assets/images/MakeYourLogo.png" class="rounded-t-md hover:opacity-55"></a>
-						<!-- <a href="https://github.com/ThisTish/MakeALogo" class="absolute top-3 left-3 bg-mustard text-text font-semibold text-sm p-1 rounded inline-flex items-center justify-center shadow-md shadow-text hover:scale-125 hover:bg-opacity-65">Make A Logo</a> -->
-					</div>
-					<p class="rounded-b-md items-center text-center bg-primary text-secondary font-fjalla bg-opacity-45">An SVG logo generator</p>
-				</div>			
-			</div>
-		</div>
-
-<!-- buttons -->
-		<button type="button" class="swiper-btn-prev absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
-			<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary bg-opacity-55 group-hover:bg-primary group-focus:ring-4 group-focus:ring-secondary group-focus:outline-none">
-				<svg class="w-4 h-4 text-text  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-				</svg>
-				<span class="sr-only">Previous</span>
-			</span>
+	<!-- carousel buttons -->
+			<button type="button" class="swiper-btn-prev absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+				<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary bg-opacity-55 group-hover:bg-primary group-focus:ring-4 group-focus:ring-secondary group-focus:outline-none">
+					<svg class="w-4 h-4 text-text  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+					</svg>
+					<span class="sr-only">Previous</span>
+				</span>
+				</button>
+				<button type="button" class="swiper-btn-next absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+				<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary bg-opacity-55 group-hover:bg-primary group-focus:ring-4 group-focus:ring-secondary group-focus:outline-none">
+					<svg class="w-4 h-4 text-text  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+					</svg>
+					<span class="sr-only">Next</span>
+				</span>
 			</button>
-			<button type="button" class="swiper-btn-next absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
-			<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary bg-opacity-55 group-hover:bg-primary group-focus:ring-4 group-focus:ring-secondary group-focus:outline-none">
-				<svg class="w-4 h-4 text-text  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-				</svg>
-				<span class="sr-only">Next</span>
-			</span>
-		</button>
-	</div>
-</section>
-
-		<div id="contactme" class=" text-center">
-			<ul class="flex justify-center">
-				<li class="flex-1 rounded-md m-1 bg-grass hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="https://github.com/thistish">GitHub</a></li>
-				<li class="flex-1 rounded-md m-1 bg-secondary hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="https://www.linkedin.com/in/tishsirface">LinkedIn</a></li>
-				<li class="flex-1 rounded-md m-1 bg-third hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="mailto:tish.sirface@gmail.com">Email</a></li>
-			</ul>
 		</div>
+	</section>
+
+	<div id="contactme" class=" text-center">
+		<ul class="flex justify-center">
+			<li class="flex-1 rounded-md m-1 bg-grass hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="https://github.com/thistish">GitHub</a></li>
+			<li class="flex-1 rounded-md m-1 bg-secondary hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="https://www.linkedin.com/in/tishsirface">LinkedIn</a></li>
+			<li class="flex-1 rounded-md m-1 bg-third hover:scale-125 hover:bg-opacity-65"><a class=" text-text font-semibold" href="mailto:tish.sirface@gmail.com">Email</a></li>
+		</ul>
+	</div>
+		
+	<!-- Modal -->
+	<div id="modal" class=" fixed inset-0 z-50 bg-text bg-opacity-25 items-center justify-center flex">
+	<div class="bg-third opacity-90 rounded-lg shadow-xl w-full max-w-xs max-h-xl md:max-w-xl">
+		<div class="p-10 flex flex-col items-center text-center">
+			<h2 class="text-xl font-semibold md:text-3xl">⚠️</h2>
+			<h2 class="text-sm font-semibold text-white md:text-3xl">Please don't "React" quite yet!</h2>
+			<p class="mt-2 text-sm text-text inline-flex md:text-2xl">Currently redesigning with &nbsp;<span class="hidden md:inline"> React </span> <img src="assets/images/react.png" class="h-5 object-contain"></p>
+			<p class="mt-2 text-xs text-text inline-flex md:text-lg">This was a first draft from eariler on in my learning journey</p>
+			<div class="mt-4 flex justify-end md:mt-6">
+				<button id="closeModalButton" class="px-4 py-2 m-3 bg-secondary text-white rounded">Paruse Portfolio</button>
+				<button class="px-4 py-2 m-3 bg-grass text-white rounded"><a href="https://blogology2-0.onrender.com/">Latest Project</a></button>
+		</div>
+		</div>
+	</div>
+	</div>			
 		
 	<footer class="footer">
         <p>&copy; 2024 Tish's Portfolio. All rights reserved.</p>

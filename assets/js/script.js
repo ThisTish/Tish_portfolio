@@ -25,4 +25,22 @@ var swiper = new Swiper(".mySwiper", {
 }
 })
 
-// module.exports = swiper
+
+		
+
+// Get modal and buttons
+const modal = document.getElementById('modal');
+const closeModalButton = document.getElementById('closeModalButton');
+
+
+// Function to close modal
+closeModalButton.addEventListener('click', () => {
+	modal.classList.add('hidden')
+});
+
+// Close modal when clicking outside of the modal content
+window.addEventListener('click', (event) => {
+	if (event.target === modal) {
+		modal.classList.add('hidden');
+	}
+});
